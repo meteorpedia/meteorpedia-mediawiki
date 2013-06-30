@@ -1,0 +1,22 @@
+<template name="mwCategories">
+	<h1>Pages in Category: {{categoryName}}</h1>
+
+	<ol>
+	{{#each categories}}
+		<li><a href="/read/{{name}}">{{name}}</a></li>
+	{{/each}}
+	</ol>
+</template>
+
+<template name="mwCategoryList">
+	<h1>List of all Categories</h1>
+
+	<p>Coming soon...</p>
+
+	<p>Try /special/Category/CategoryName</p>
+
+	<ol>
+	{{#each categories}}
+		<li><a href="/special/Categories/{{name}}">{{name}}</a></li>
+	{{/each}}
+</template>

@@ -1,0 +1,12 @@
+a.external {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=) center right no-repeat;
+	background: url(http://meteorwiki.com/mediawiki/skins/vector/images/external-link-ltr-icon.png?2013-06-24T11:43:20Z) center right no-repeat!ie;
+	padding-right: 13px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	overflow: hidden;
+	padding-top: .5em;
+	padding-bottom: .17em;
+	border-bottom: 1px solid #aaa;
+}

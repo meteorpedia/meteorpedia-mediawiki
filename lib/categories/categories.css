@@ -1,0 +1,34 @@
+/* CSS graciously copied from Mediawiki */
+
+.catlinks {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	margin-top: 1em;
+	clear: both;
+}
+
+.catlinks ul {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	list-style-type: none;
+	list-style-image: none;
+	vertical-align: middle !ie;
+}
+
+.catlinks li:first-child {
+	padding-left: 0.25em;
+	border-left: none;
+}
+
+.catlinks li {
+	display: inline-block;
+	line-height: 1.25em;
+	border-left: 1px solid #AAA;
+	margin: 0.125em 0;
+	padding: 0 0.5em;
+	zoom: 1;
+	display: inline !ie;
+}

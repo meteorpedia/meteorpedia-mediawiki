@@ -1,0 +1,13 @@
+<template name="special">
+	{{#if specialPage}}
+		{{{specialPage}}}
+	{{else}}
+		<h1>List of Special Pages</h1>
+
+		<ol>
+		{{#each specialPages}}
+			<li><a href="/special/{{name}}">{{name}}</a></li>
+		{{/each}}
+		</ol>
+	{{/if}}
+</template>

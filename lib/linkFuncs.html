@@ -1,0 +1,9 @@
+<template name="linkFuncs_whatLinksHere">
+	<h1>Pages that link to "{{pageName}}"</h1>
+
+	<ol>
+	{{#each pages}}
+		<li><a href="/read/{{name}}">{{name}}</a></li>
+	{{/each}}
+	</ol>
+</template>
