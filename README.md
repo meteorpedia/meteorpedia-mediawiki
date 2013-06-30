@@ -1,7 +1,6 @@
 # Meteorpedia-Mediawiki
 
-This is an extension for Meteorpedia which adds some essential features found in
-Mediawiki (the wiki software used by Meteorpedia).
+This is an extension for Meteorpedia which adds some essential features found in Mediawiki (the wiki software used by Wikipedia).
 
 ## Initial release
 
