@@ -7,6 +7,44 @@ a.external {
 h1, h2, h3, h4, h5, h6 {
 	overflow: hidden;
 	padding-top: .5em;
-	padding-bottom: .17em;
-	border-bottom: 1px solid #aaa;
+	line-height: inherit !important; /* undo bootstrap */
 }
+
+h1 {
+	line-height: 1.2em !important;
+}
+
+h1, h2 {
+	padding-bottom: .17em;
+	border-bottom: 1px solid #aaa;	
+}
+
+h3, h4, h5 {
+	margin-bottom: .3em;
+}
+
+#TOC { 
+	display: inline-block;
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px 30px 5px 10px;
+	font-size: 95%;
+}
+#TOC div { text-align: center; font-weight: bold; }
+
+
+.syntaxhighlighter {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	margin: 0 !important;
+	padding: 10px;
+}
+
+/* toolbar seems to be broken, so rather don't show it */
+.syntaxhighlighter .toolbar {
+	display: none;
+}
+
+/* override bootstrap */
+pre { padding: 2px !important; }

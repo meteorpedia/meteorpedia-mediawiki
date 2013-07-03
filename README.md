@@ -32,6 +32,24 @@ Use {{#if: not-empty | true output | false output}} in your page.  The most comm
 use is during transclusion (see below).  e.g. in the Template, you can write something like
 {{#if: {{{name|}}} | His name is {{{name}}} | He has no name }}.
 
+### Special Pages
+
+Adds hooks for other extensions to provide their own /special/ pages.  As examples, there
+is an *AllPages* special page (shows all the pages in the wiki) and a *RecentChanges* page.
+
+### Table of Contents
+
+Automatically create a Table of Contents if there are more than 3 headings in the
+contents.  By default the TOC will appear just before the first &lt;h2&gt;, but
+you can also put a \_\_TOC\_\_ in your page to choose where it will appear, or a
+\_\_NOTOC\_\_ to disable the feature completely.
+
+### Tables
+
+Git flavored markdown actually supports real HTML tables.  But for those familiar
+with mediawiki's syntax (and especially when combined with *if* parser functions),
+you have it.  http://www.mediawiki.org/wiki/Help:Tables
+
 ### Tranclusion (for use with Templates)
 
 {{People}} will transclude the *People* page.  Anything in that page that is not
@@ -39,12 +57,6 @@ surrounded by &lt;noinclude&gt;&lt;/noinclude&gt; will be inserted into the curr
 page in that position.  Variables may be passed too, e.g. {{Person | name=Mike}},
 where anything that looks like {{{name}}} in the transclused page will be replaced
 with 'Mike' in the page it is transcluded to.  You can also use a {{{name|Default}}}.
-
-### Tables
-
-Git flavored markdown actually supports real HTML tables.  But for those familiar
-with mediawiki's syntax (and especially when combined with *if* parser functions),
-you have it.  http://www.mediawiki.org/wiki/Help:Tables
 
 ## Extending this extension
 

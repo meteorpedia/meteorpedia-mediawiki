@@ -1,0 +1,21 @@
+<template name="mwRecentChanges">
+	<h1>Recent Changes</h1>
+
+	<ul>
+	{{#each editsByDate}}
+		<p><b>{{date}}</b></p>
+		<p>
+		<ul>
+		{{#each edits}}
+		<li>(<a href="/history/{{pageName}}/diff/previous/{{ts}}">diff</a>
+			| <a href="/history/{{pageName}}">hist</a>) . .
+			<a href="/read/{{pageName}}">{{formatPageName pageName}}</a>;
+			{{time}}
+			. . 
+			{{#with publishedBy}}{{> profileLink}}{{/with}}
+			{{#if comment}}({{comment}}){{/if}}
+		{{/each}}
+		</ul>
+		</p>
+	{{/each}}
+</template>

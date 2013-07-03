@@ -1,0 +1,19 @@
+/* override default wiki styles */
+.edit .edit-form-control { margin-left: 0 !important; }
+.edit-column { margin-left: 20px !important; }
+
+/* bootstrap overrides */
+.edit .nav { margin-bottom: -1px; }
+
+/* same styling as .edit textarea */
+#editPreview {
+	height: 450px;
+	margin-bottom: 20px;
+
+	/* undo from .uneditable */
+	background: white;
+	color: #555;
+	white-space: normal;
+}
+
+.edit textarea {}
