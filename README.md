@@ -24,13 +24,19 @@ to the full URL wherever you place &lt;references /&gt; in your page.
 ### Links
 
 **Internal links**: easily link to another [[Page]] in the wiki.  Coming soon, you'll
-be able to see "what links to this page".  Rename the link like [[Page|this]].  See all the pages that link to a page at /special/WhatLinksHere/pageName.  **External links**: [http://blah.com/ Cool Page]
+be able to see "what links to this page".  Rename the link like [[Page|this]].  Links to non-existing pages will be in a different color.  See all the pages that link to a page at /special/WhatLinksHere/pageName.  **External links**: [http://blah.com/ Cool Page]
 
 ### Parser functions
 
 Use {{#if: not-empty | true output | false output}} in your page.  The most common
 use is during transclusion (see below).  e.g. in the Template, you can write something like
 {{#if: {{{name|}}} | His name is {{{name}}} | He has no name }}.
+
+### Previews
+
+When editing, the user is presented with a "Source" and "Preview" tab.  Parsing occurs on the server (i.e. translusion templates, etc rather than sending them all across) and final
+rendering happens on the client (to avoid sending formatting data across).  This system
+pretty much plugs in directly to the regular meteorpedia-mediawiki save/read process.
 
 ### Special Pages
 
@@ -78,7 +84,7 @@ plugins: {
 ```js
 plugins: {
 	tag: {
-		'ref: { api: '0.1.0', func: function(data) { data.attrs; data.content; } }
+		'ref': { api: '0.1.0', func: function(data) { data.attrs; data.content; } }
 	}
 }
 ```
