@@ -1,6 +1,6 @@
 <template name="special">
-	{{#if specialPage}}
-		{{{specialPage}}}
+	{{#if specialPageExists}}
+		{{#isolate}}{{{specialPage}}}{{/isolate}}
 	{{else}}
 		<h1>List of Special Pages</h1>
 
