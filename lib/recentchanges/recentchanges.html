@@ -7,9 +7,13 @@
 		<p>
 		<ul>
 		{{#each edits}}
-		<li>(<a href="/history/{{pageName}}/diff/previous/{{ts}}">diff</a>
-			| <a href="/history/{{pageName}}">hist</a>) . .
-			<a href="/read/{{pageName}}">{{formatPageName pageName}}</a>;
+		<li>(<a class="previous-history" data-name="{{pageName}}"
+			data-type="previous-history" data-ts="{{ts}}"
+			href="/history/{{pageName}}/diff/previous/{{ts}}">diff</a>
+			| <a class="internal-link" data-link="history" data-name="{{pageName}}"
+				href="/history/{{pageName}}">hist</a>) . .
+			<a class="internal-link" data-link="read" data-name="{{pageName}}"
+				href="/read/{{pageName}}">{{formatPageName pageName}}</a>;
 			{{time}}
 			. . 
 			{{#with publishedBy}}{{> profileLink}}{{/with}}

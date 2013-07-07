@@ -3,7 +3,8 @@
 
 	<ol>
 	{{#each pages}}
-		<li><a href="/read/{{name}}">{{formatPageName name}}</a></li>
+		<li><a class="internal-link" data-link="read" data-name="{{name}}"
+			href="/read/{{name}}">{{formatPageName name}}</a></li>
 	{{/each}}
 	</ol>
 </template>

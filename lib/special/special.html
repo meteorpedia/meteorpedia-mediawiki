@@ -6,7 +6,8 @@
 
 		<ol>
 		{{#each specialPages}}
-			<li><a href="/special/{{name}}">{{name}}</a></li>
+			<li><a class="internal-link" data-link="special" data-name="{{name}}"
+				href="/special/{{name}}">{{name}}</a></li>
 		{{/each}}
 		</ol>
 	{{/if}}

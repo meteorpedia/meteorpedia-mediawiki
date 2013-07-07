@@ -3,7 +3,8 @@
 
 	<ol>
 	{{#each categories}}
-		<li><a href="/read/{{name}}">{{name}}</a></li>
+		<li><a class="internal-link" data-link="read" data-name="{{name}}"
+			href="/read/{{name}}">{{name}}</a></li>
 	{{/each}}
 	</ol>
 </template>
@@ -17,6 +18,8 @@
 
 	<ol>
 	{{#each categories}}
-		<li><a href="/special/Categories/{{name}}">{{name}}</a></li>
+		<li><a class="special-link" data-name="Categories" data-option="{{name}}"
+			href="/special/Categories/{{name}}">{{name}}</a></li>
 	{{/each}}
+	</ol>
 </template>
