@@ -16,6 +16,11 @@ Package.on_use(function (api) {
 		'lib/recentchanges/recentchanges.html'],
 	'client');
 
+	api.add_files([
+		'lib/links/img/external-link-ltr-icon.png',
+		'lib/links/img/lock-icon.png'
+	], 'client');
+
     api.add_files(['lib/mediawiki.js', 'lib/categories/categories.js', 'lib/links/links.js',
     	'lib/cite.js', 'lib/parserFuncs.js', 'lib/special/special.js', 'lib/tables/tables.js',
     	'lib/preview/preview.js', 'lib/allpages/allpages.js', 'lib/recentchanges/recentchanges.js',

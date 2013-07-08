@@ -1,1 +1,18 @@
-a.new { color: #a55858; }
+#main a.new { color: #a55858; }
+
+/*
+ * Image credits: Wikimedia Commons, released under the GPL
+ * http://commons.wikimedia.org/wiki/Category:External_link_icons
+ */ 
+
+#main a.external[href ^="http://"] {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=) center right no-repeat;
+	background: url(/packages/meteorpedia-mediawiki/lib/links/img/external-link-ltr-icon.png) center right no-repeat!ie;
+	padding-right: 13px;
+}
+
+#main a.external[href ^="https://"], .link-https {
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAdUlEQVQYV2P4//8/Awxv3LThf0dXKxyD+DA5DEUg+tWrV2AaWTFcIboJyJrhCtGtRMcgebhpL2/4/v//Lvn//x+7IRjIfn8v+P/t055gxZgKPzaC8Y/nMYQVLpnM8f/zo3AqKfzyOOL/h/sh/59c9sBUSIyvAeRdJWjk4E//AAAAAElFTkSuQmCC) center right no-repeat;
+	background:url(/packages/meteorpedia-mediawiki/lib/links/img/lock-icon.png) center right no-repeat!ie;
+	padding-right:13px
+}
