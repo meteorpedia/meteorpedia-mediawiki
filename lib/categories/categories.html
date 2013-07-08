@@ -19,11 +19,19 @@
 		<li><span class="catOpen">[<b>{{#if isOpen}}-{{else}}+{{/if}}</b>]</span>
 			<a class="internal-link" data-link="read" data-name="{{name}}"
 			href="/read/{{name}}">{{formatCategoryName name}}</a>
-			{{#if hasChildren}}
-				<ol>
-				{{> mwCategories_cats}}
-				{{> mwCategories_pages}}
-				</ol>
+			{{#if isOpen}}
+				{{#if hasChildren}}
+					<ol>
+					{{> mwCategories_cats}}
+					{{> mwCategories_pages}}
+					</ol>
+				{{else}}
+					{{#if isReady}}
+						<br />No pages or subcategories
+					{{else}}
+						<span class="loading"></span>
+					{{/if}}
+				{{/if}}
 			{{/if}}
 		</li>
 	{{/each}}
