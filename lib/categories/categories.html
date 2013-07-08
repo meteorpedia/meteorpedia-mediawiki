@@ -26,8 +26,24 @@
 	<ol>
 	{{#each categories}}
 		<li><a class="internal-link" data-link="read"
-			data-name="Category:{{name}}"
-			href="/read/Category:{{name}}">{{formatCategoryName name}}</a></li>
+			data-name="{{name}}"
+			href="/read/{{name}}">{{formatCategoryName name}}</a></li>
 	{{/each}}
 	</ol>
+</template>
+
+<template name="mwCategoryPageRender">
+	<div class="catlinks">
+		<a class="internal-link" data-link="special" data-name="Categories"
+			href="/special/Categories">Categories</a>:
+
+		<ul>
+		{{#each categories}}
+			<li><a class="internal-link" data-link="read"
+				 data-name="Category:{{this}}"
+				 href="/read/Category:{{this}}">{{formatPageName this}}</a></li>
+		{{/each}}
+		</ul>
+
+	</div>
 </template>

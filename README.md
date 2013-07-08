@@ -11,9 +11,8 @@ This is a very early release.  More features are coming.  More cleanup to be don
 ### Categories
 
 Put [[Category:People]] in your page to put it in the 'People' category.  Can be
-used more than once.  At the bottom of your page, a box will be displayed showing
-a list of links to all the categories your page is in.  Clicking on these links
-will go to a page showing links to all the pages in that category.
+used more than once for multiple cateogries.  At the bottom of your page, a box
+will be displayed showing a list of links to all the categories your page is in.  Clicking on these links will go to a page showing links to all the pages in that category.
 
 ### Cite / citations / references
 
