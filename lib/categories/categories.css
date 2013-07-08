@@ -32,3 +32,5 @@
 	zoom: 1;
 	display: inline !ie;
 }
+
+span.catOpen { cursor: pointer; }

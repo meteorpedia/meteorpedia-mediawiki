@@ -2,22 +2,38 @@
 	{{#if categoriesExist}}
 		<h2>Subcategories</h2>
 		<ol>
-		{{#each categories}}
-			<li><a class="internal-link" data-link="read" data-name="{{name}}"
-				href="/read/{{name}}">{{formatCategoryName name}}</a></li>
-		{{/each}}
-		</ol>	
+			{{> mwCategories_cats}}
+		</ol>
 	{{/if}}
 
 	{{#if pagesExist}}
 		<h2>Pages in category "{{formatPageName categoryName}}"</h2>
 		<ol>
-		{{#each pages}}
-			<li><a class="internal-link" data-link="read" data-name="{{name}}"
-				href="/read/{{name}}">{{formatPageName name}}</a></li>
-		{{/each}}
+			{{> mwCategories_pages}}
 		</ol>
 	{{/if}}
+</template>
+
+<template name="mwCategories_cats">
+	{{#each categories}}
+		<li><span class="catOpen">[<b>{{#if isOpen}}-{{else}}+{{/if}}</b>]</span>
+			<a class="internal-link" data-link="read" data-name="{{name}}"
+			href="/read/{{name}}">{{formatCategoryName name}}</a>
+			{{#if hasChildren}}
+				<ol>
+				{{> mwCategories_cats}}
+				{{> mwCategories_pages}}
+				</ol>
+			{{/if}}
+		</li>
+	{{/each}}
+</template>
+
+<template name="mwCategories_pages">
+	{{#each pages}}
+		<li><a class="internal-link" data-link="read" data-name="{{name}}"
+		href="/read/{{name}}">{{formatPageName name}}</a></li>
+	{{/each}}
 </template>
 
 <template name="mwCategoryList">
