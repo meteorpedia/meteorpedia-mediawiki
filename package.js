@@ -13,7 +13,7 @@ Package.on_use(function (api) {
 		'lib/categories/categories.html', 'lib/special/special.html',
 		'lib/tables/tables.css', 'lib/links/links.html', 'lib/links/links.css',
 		'lib/preview/preview.css', 'lib/toc.js', 'lib/allpages/allpages.html',
-		'lib/recentchanges/recentchanges.html'],
+		'lib/recentchanges/recentchanges.html', 'lib/mediawiki.html'],
 	'client');
 
 	api.add_files([

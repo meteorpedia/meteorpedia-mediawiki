@@ -17,4 +17,6 @@
 	overflow: auto;
 }
 
+.edit .tab-content { clear: both; }
+
 .edit textarea {}
