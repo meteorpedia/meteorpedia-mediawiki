@@ -1,25 +1,33 @@
 <template name="mwCategories">
-	<h1>Pages in Category: {{categoryName}}</h1>
+	{{#if categoriesExist}}
+		<h2>Subcategories</h2>
+		<ol>
+		{{#each categories}}
+			<li><a class="internal-link" data-link="read" data-name="{{name}}"
+				href="/read/{{name}}">{{formatCategoryName name}}</a></li>
+		{{/each}}
+		</ol>	
+	{{/if}}
 
-	<ol>
-	{{#each categories}}
-		<li><a class="internal-link" data-link="read" data-name="{{name}}"
-			href="/read/{{name}}">{{name}}</a></li>
-	{{/each}}
-	</ol>
+	{{#if pagesExist}}
+		<h2>Pages in category "{{formatPageName categoryName}}"</h2>
+		<ol>
+		{{#each pages}}
+			<li><a class="internal-link" data-link="read" data-name="{{name}}"
+				href="/read/{{name}}">{{formatPageName name}}</a></li>
+		{{/each}}
+		</ol>
+	{{/if}}
 </template>
 
 <template name="mwCategoryList">
 	<h1>List of all Categories</h1>
 
-	<p>Coming soon...</p>
-
-	<p>Try /special/Category/CategoryName</p>
-
 	<ol>
 	{{#each categories}}
-		<li><a class="special-link" data-name="Categories" data-option="{{name}}"
-			href="/special/Categories/{{name}}">{{name}}</a></li>
+		<li><a class="internal-link" data-link="read"
+			data-name="Category:{{name}}"
+			href="/read/Category:{{name}}">{{formatCategoryName name}}</a></li>
 	{{/each}}
 	</ol>
 </template>

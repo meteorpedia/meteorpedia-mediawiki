@@ -18,6 +18,7 @@ Package.on_use(function (api) {
 
     api.add_files(['lib/mediawiki.js', 'lib/categories/categories.js', 'lib/links/links.js',
     	'lib/cite.js', 'lib/parserFuncs.js', 'lib/special/special.js', 'lib/tables/tables.js',
-    	'lib/preview/preview.js', 'lib/allpages/allpages.js', 'lib/recentchanges/recentchanges.js'],
+    	'lib/preview/preview.js', 'lib/allpages/allpages.js', 'lib/recentchanges/recentchanges.js',
+    	'lib/namespaces.js'],
     ['client', 'server']);
 });
