@@ -1,5 +1,24 @@
 <template name="mwAllPages">
-	<h1>All Pages on this Wiki</h1>
+	<h1>All Pages on this Wiki {{#if namespace}}
+		(in "{{namespace}}"){{/if}}
+	</h1>
+
+	<p>Other namespaces:
+	{{#if namespace}}
+		<a class="internal-link" data-link="special" data-name="AllPages"
+			href="/special/AllPages">Pages</a>
+		|
+	{{/if}}
+	{{#if $neq namespace 'Category'}}}
+		<a class="special-link" data-name="AllPages" data-option="Category"
+			href="/special/AllPages/Category">Category</a>
+		{{#if $neq namespace 'Template'}}|{{/if}}
+	{{/if}}
+	{{#if $neq namespace 'Template'}}
+		<a class="special-link" data-name="AllPages" data-option="Template"
+			href="/special/AllPages/Template">Template</a>
+	{{/if}}
+	</p>
 
 	<ol>
 	{{#each pages}}

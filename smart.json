@@ -7,6 +7,7 @@
     "git": "https://github.com/gadicohen/meteorpedia-mediawiki.git",
 	"packages": {
 		"extensions": "0.0.5",
-		"SyntaxHighlighter": "0.0.1"
+		"SyntaxHighlighter": "0.0.1",
+        "handlebar-helpers": "0.0.6"
 	}
 }
