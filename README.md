@@ -116,7 +116,7 @@ Javascript should be separated into client-side and server-side.  The temporary 
 declaring functions.  On Firefox, functions declared in an *if* statement will not
 be available in the Extensions.add clause at the top of the page.  And in any case,
 these functions are defined regardless of their position in the if-else clause on
-other browsers / node.
+other browsers / node.  Suggest file-common.js, file-server.js, file-client.js
 
 * http://statichtml.com/2011/spidermonkey-function-hoisting.html
 * http://stackoverflow.com/questions/4069100/why-cant-i-use-a-javascript-function-before-its-definition-inside-a-try-block
