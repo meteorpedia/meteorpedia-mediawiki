@@ -107,3 +107,17 @@ hooks: {
 	'mwRenderInit': { api: '0.1.0', func: function() { } }
 }
 ```
+
+There are some other (currently) undocumented hooks which you may find in the source code.
+
+## TODO
+
+Javascript should be separated into client-side and server-side.  The temporary measure of wrapping in a Meteor.isServer/isClient *if* statement is useless for
+declaring functions.  On Firefox, functions declared in an *if* statement will not
+be available in the Extensions.add clause at the top of the page.  And in any case,
+these functions are defined regardless of their position in the if-else clause on
+other browsers / node.
+
+* http://statichtml.com/2011/spidermonkey-function-hoisting.html
+* http://stackoverflow.com/questions/4069100/why-cant-i-use-a-javascript-function-before-its-definition-inside-a-try-block
+
