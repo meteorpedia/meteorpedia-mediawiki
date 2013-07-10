@@ -54,3 +54,12 @@ span.loading {
 }
 
 #edit-contents { font-family: courier new;}
+
+/* e.g. Redirected from Page */
+#contentSub, #contentSub2 {
+	font-size: 84%;
+	line-height: 1.2em;
+	margin: -.5em 0 1.4em 1em;
+	color: #7d7d7d;
+	width: auto;
+}
