@@ -37,6 +37,10 @@ When editing, the user is presented with a "Source" and "Preview" tab.  Parsing 
 rendering happens on the client (to avoid sending formatting data across).  This system
 pretty much plugs in directly to the regular meteorpedia-mediawiki save/read process.
 
+### Redirects
+
+If the first line of a page content is <code>#REDIRECT [[PageName]]</code>, when the user visits this page he will automatically be shown the content of *PageName*, with a hint explaining that he was redirected from the original page.  e.g. [[raix]]
+
 ### Special Pages
 
 Adds hooks for other extensions to provide their own /special/ pages.  As examples, there
