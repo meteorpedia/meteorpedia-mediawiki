@@ -1,0 +1,20 @@
+<template name="search">
+	<h1>Search for {{#isolate}}<span>{{query}}</span>{{/isolate}}</h1>
+
+	<ul id="mwSearchResults">
+		{{#each results}}
+			{{> searchResult}}
+		{{/each}}
+	</ul>
+</template>
+
+<template name="searchResult">
+	<li>
+		<a class="internal-link" data-link="read" data-name="{{pageName}}"
+			href="/read/{{pageName}}">{{pageName}}</a>
+		<div class="content">
+			<span class="lastmod">{{lastmod}};</span>
+			<span>{{{preparedSearch}}}</span>
+		</div>
+	</li>
+</template>
