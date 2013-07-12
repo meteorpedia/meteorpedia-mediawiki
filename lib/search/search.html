@@ -6,6 +6,12 @@
 			{{> searchResult}}
 		{{/each}}
 	</ul>
+
+	{{#if moreResults}}
+		<div id="showMoreResults" style="margin-left: 25px;">
+			<span class="loading"></span>
+		</div>
+	{{/if}}
 </template>
 
 <template name="searchResult">

@@ -41,6 +41,10 @@ pretty much plugs in directly to the regular meteorpedia-mediawiki save/read pro
 
 If the first line of a page content is <code>#REDIRECT [[PageName]]</code>, when the user visits this page he will automatically be shown the content of *PageName*, with a hint explaining that he was redirected from the original page.  e.g. [[raix]]
 
+### Search (Live Search)
+
+Just start typing in the search bar at the top to automatically start a "real-time" research.  Infinite scrolling, and results are still reactive.
+
 ### Special Pages
 
 Adds hooks for other extensions to provide their own /special/ pages.  As examples, there
