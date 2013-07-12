@@ -11,6 +11,7 @@
 			<br/>
 		</span>
 	</div>
+
 	<div class="row">
 		<span class="span3">
 			Internal links to other pages on this wiki should be formatted
@@ -21,6 +22,7 @@
 			<br/>
 		</span>
 	</div>
+
 	<div class="row">
 		<span class="span3">
 			You can use 
@@ -37,4 +39,21 @@ function helloWorld() {
 ```</pre>
 		</span>
 	</div>
+
+	{{#isolate}}
+	{{#if deps}}
+	<div class="row">
+		<span class="span3">
+			<span>Dependencies:</span>
+			<ul>
+			{{#each deps}}
+				<li><a target="_blank"
+					href="/read/{{this}}">{{formatPageName this}}</a></li>
+			{{/each}}
+			</ul>
+		</span>
+	</div>
+	{{/if}}
+	{{/isolate}}
 </template>
+
