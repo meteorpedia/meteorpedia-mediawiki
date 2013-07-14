@@ -63,3 +63,5 @@ span.loading {
 	color: #7d7d7d;
 	width: auto;
 }
+
+.syntaxhighlighter code { height: 15px !important; }
