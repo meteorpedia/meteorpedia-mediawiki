@@ -26,7 +26,26 @@
 			</ol>
 		{{else}}
 			{{#if isReady}}
-				<br />No pages or subcategories
+				<ul><li>No pages or subcategories.</li></ul>
+			{{else}}
+				<span class="loading"></span>
+			{{/if}}
+		{{/if}}
+	{{/if}}
+</template>
+
+<template name="mwCategoryTree2">
+	<div class="catOpen">[<b>{{#if isOpen}}-{{else}}+{{/if}}</b>]
+	{{formatCategoryName name}}</div>
+	{{#if isOpen}}
+		{{#if hasChildren}}
+			<ol>
+			{{> mwCategories_cats}}
+			{{> mwCategories_pages}}
+			</ol>
+		{{else}}
+			{{#if isReady}}
+				<ul><li>No pages or subcategories.</li></ul>
 			{{else}}
 				<span class="loading"></span>
 			{{/if}}

@@ -15,7 +15,8 @@ Package.on_use(function (api) {
 		'lib/tables/tables.css', 'lib/links/links.html', 'lib/links/links.css',
 		'lib/preview/preview.css', 'lib/toc.js', 'lib/allpages/allpages.html',
 		'lib/recentchanges/recentchanges.html', 'lib/mediawiki.html',
-		'lib/tags.js', 'lib/search/search.html', 'lib/search/search.css'],
+		'lib/tags.js', 'lib/search/search.html', 'lib/search/search.css',
+		'lib/read2/read2.html', 'lib/read2/read2-client.js', 'lib/read2/read2.css'],
 	'client');
 
 	// client files (images)
@@ -30,4 +31,7 @@ Package.on_use(function (api) {
     	'lib/preview/preview.js', 'lib/allpages/allpages.js', 'lib/recentchanges/recentchanges.js',
     	'lib/namespaces.js', 'lib/search/search.js'],
     ['client', 'server']);
+
+    // server only files
+    api.add_files(['lib/read2/read2-server.js'], 'server');
 });

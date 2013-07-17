@@ -1,4 +1,5 @@
-The **meteorpedia-mediawiki** smart package adds some features from [MediaWiki](http://www.mediawiki.org/wiki/MediaWiki), as detailed below:
+The **meteorpedia-mediawiki** smart package adds some features from [MediaWiki](http://www.mediawiki.org/wiki/MediaWiki), as detailed below.  Copyright (C)
+2013 by Gadi Cohen, and released under the GNU Public License v3.
 
 ## Initial release
 

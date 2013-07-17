@@ -1,0 +1,6 @@
+.readSideBar {
+	font-size: 80%; opacity: 0.8;
+	border-right: 1px solid #ccf;
+}
+
+.readSideBar ol, .readSideBar ul { margin: 0 0 0 25px;}
