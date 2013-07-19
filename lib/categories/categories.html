@@ -59,17 +59,17 @@
 			<a class="internal-link" data-link="read" data-name="{{name}}"
 			href="/read/{{name}}">{{formatCategoryName name}}</a>
 			{{#if isOpen}}
-				{{#if hasChildren}}
-					<ol>
-					{{> mwCategories_cats}}
-					{{> mwCategories_pages}}
-					</ol>
-				{{else}}
-					{{#if isReady}}
-						<br />No pages or subcategories
+				{{#if isReady}}
+					{{#if hasChildren}}
+						<ol>
+							{{> mwCategories_cats}}
+							{{> mwCategories_pages}}
+						</ol>
 					{{else}}
-						<span class="loading"></span>
+						<br />No pages or subcategories
 					{{/if}}
+				{{else}}
+					<span class="loading"></span>
 				{{/if}}
 			{{/if}}
 		</li>

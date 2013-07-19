@@ -8,6 +8,7 @@
 	"packages": {
 		"extensions": "0.0.5",
 		"SyntaxHighlighter": "0.0.1",
-        "handlebar-helpers": "0.0.6"
+        "handlebar-helpers": "0.0.6",
+		"isolate-value": "2.0.0"
 	}
 }
