@@ -3,6 +3,8 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
+	api.use('standard-app-packages', ['client', 'server']);
+	api.use('sitemaps', 'server');
 	api.use('extensions', ['client', 'server']);
 	api.use(['jquery', 'bootstrap', 'handlebars', 'SyntaxHighlighter'], 'client');
 
@@ -10,7 +12,7 @@ Package.on_use(function (api) {
 	api.use('templating', 'client');
 
 	// client files (js, html, css)
-	api.add_files(['lib/highlight.js', 'lib/mediawiki.css', 'lib/categories/categories.css',
+	api.add_files(['lib/mediawiki.css', 'lib/categories/categories.css',
 		'lib/categories/categories.html', 'lib/special/special.html',
 		'lib/tables/tables.css', 'lib/links/links.html', 'lib/links/links.css',
 		'lib/preview/preview.css', 'lib/toc.js', 'lib/allpages/allpages.html',

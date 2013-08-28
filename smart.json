@@ -6,10 +6,10 @@
     "version": "0.0.2",
     "git": "https://github.com/gadicohen/meteorpedia-mediawiki.git",
 	"packages": {
-		"extensions": "0.0.5",
-		"SyntaxHighlighter": "0.0.1",
-        "handlebar-helpers": "0.0.6",
-		"isolate-value": "2.0.0",
-        "sitemaps": "0.0.9"
+		"extensions": "0.0.7",
+		"SyntaxHighlighter": "0.0.2",
+        "handlebar-helpers": "0.0.9",
+		"isolate-value": "2.0.2",
+        "sitemaps": "0.0.10"
 	}
 }
