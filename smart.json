@@ -3,7 +3,7 @@
     "description": "mw stuff for mpedia: categories, {{parser}}, [[links]], tables, etc.",
     "homepage": "https://github.com/gadicohen/meteorpedia-mediawiki",
     "author": "Gadi Cohen <dragon@wastelands.net>",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "git": "https://github.com/gadicohen/meteorpedia-mediawiki.git",
 	"packages": {
 		"extensions": "0.0.7",
