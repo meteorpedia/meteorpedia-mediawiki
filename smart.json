@@ -3,13 +3,13 @@
     "description": "mw stuff for mpedia: categories, {{parser}}, [[links]], tables, etc.",
     "homepage": "https://github.com/gadicohen/meteorpedia-mediawiki",
     "author": "Gadi Cohen <dragon@wastelands.net>",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "git": "https://github.com/gadicohen/meteorpedia-mediawiki.git",
 	"packages": {
 		"extensions": "0.0.7",
 		"SyntaxHighlighter": "0.0.2",
         "handlebar-helpers": "0.0.9",
 		"isolate-value": "2.0.2",
-        "sitemaps": "0.0.10"
+        "sitemaps": "0.0.12"
 	}
 }
