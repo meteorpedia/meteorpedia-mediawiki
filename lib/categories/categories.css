@@ -30,7 +30,7 @@
 	margin: 0.125em 0;
 	padding: 0 0.5em;
 	zoom: 1;
-	display: inline !ie;
+	/* display: inline !ie; */
 }
 
 span.catOpen {
